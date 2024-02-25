@@ -119,7 +119,17 @@ USE_I18N = True
 USE_TZ = True
 
 CSRF_TRUSTED_ORIGINS = [
+    
+    ',
+    # Add more trusted IP addresses as needed
+]
+CSRF_TRUSTED_ORIGINS = [
+    'https://20.119.8.33',
+     'https://20.231.250.161,20.231.250.193,20.231.250.219,20.231.250.227,20.231.250.241,20.231.252.97,20.119.8.33',
+    'http://20.231.250.161,20.231.250.193,20.231.250.219,20.231.250.227,20.231.250.241,20.231.252.97,20.119.8.33',
+    'http://20.119.8.33',
     'https://123contact.azurewebsites.net/',
+    'http://123contact.azurewebsites.net/',
     # Add more trusted IP addresses as needed
 ]
 
